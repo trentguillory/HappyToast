@@ -26,6 +26,8 @@ window.showToast(message: "Works on windows!")
 
 ``` 
 view.showToast(message: "Works on views!", type: .success)
+
 window.showToast(message: "No Internet connection", type: .warning)
+
 viewController.showToast(message: "Server failed to connect", type: .failure)
 ```
