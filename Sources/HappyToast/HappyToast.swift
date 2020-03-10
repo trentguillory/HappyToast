@@ -55,7 +55,7 @@ extension UIView {
             toast.frame = nav.frame
             insertSubview(toast, belowSubview: nav)
         }else {
-            toast.frame = CGRect(x: 0, y: -44, width: UIScreen.main.bounds.width / 2.0, height: 44)
+            toast.frame = CGRect(x: 0, y: -44, width: UIScreen.main.bounds.width, height: 44)
             addSubview(toast)
         }
         animateToast(show: true)
@@ -77,10 +77,6 @@ extension UIView {
                 toast.removeFromSuperview()
             }
         }
-    }
-    
-    private func determineToastYOrigin() -> Float {
-        return 0.0
     }
     
     private func findNavBar() -> UINavigationBar? {

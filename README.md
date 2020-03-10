@@ -23,7 +23,6 @@ window.showToast(message: "Works on windows!")
 ```
 
 **Change the style:**
-
 ``` 
 view.showToast(message: "Works on views!", type: .success)
 
